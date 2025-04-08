@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeavenBoards - Premium Board Collection</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <h1>HeavenBoards</h1>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+            <div class="user-account">
+                <a href="login.html" id="login-link">Login</a>
+                <a href="register.html" id="register-link">Register</a>
+                <a href="#" id="account-link" style="display: none;">My Account</a>
+                <a href="#" id="logout-link" style="display: none;">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Quality Boards for Every Need</h2>
+            <p>Discover our premium collection of boards crafted with excellence</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <h2 class="section-title">Featured Boards</h2>
+        <div class="product-grid" id="featured-products-container">
+            <!-- Products will be loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2 class="section-title">Browse by Category</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="https://s6.gifyu.com/images/bMgOR.png" alt="hpl-board">
+                <h3>HPL Board</h3>
+                <a href="products.html?category=hpl-board" class="btn-small">View All</a>
+            </div>
+            <div class="category-card">
+                <img src="https://s6.gifyu.com/images/bMgXO.webp" alt="melamine-board">
+                <h3>Melamine Board</h3>
+                <a href="products.html?category=melamine-board" class="btn-small">View All</a>
+            </div>
+            <div class="category-card">
+                <img src="https://s6.gifyu.com/images/bMgeI.png" alt="high-glass">
+                <h3>High Glass</h3>
+                <a href="products.html?category=high-glass" class="btn-small">View All</a>
+            </div>
+            <div class="category-card">
+                <img src="https://s6.gifyu.com/images/bM4Sn.png" alt="matt-board">
+                <h3>Matt Board</h3>
+                <a href="products.html?category=matt-board" class="btn-small">View All</a>
+            </div>
+            <div class="category-card">
+                <img src="https://s6.gifyu.com/images/bM4zo.png" alt="embossed-board">
+                <h3>Embossed Board</h3>
+                <a href="products.html?category=embossed-board" class="btn-small">View All</a>
+            </div>
+            <div class="category-card">
+                <img src="https://s6.gifyu.com/images/bM4LT.png" alt="3d-decor-board">
+                <h3>3D Decor Board</h3>
+                <a href="products.html?category=3d-decor-board" class="btn-small">View All</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonial-slider" id="testimonial-container">
+            <!-- Testimonials will be loaded here via JavaScript -->
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback">
+        <h2 class="section-title">Share Your Feedback</h2>
+        <div class="feedback-container">
+            <form id="feedback-form" class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-type">Product Type</label>
+                    <select id="product-type" name="product-type">
+                        <option value="">-- Select a product type --</option>
+                        <option value="skateboard">Skateboard</option>
+                        <option value="longboard">Longboard</option>
+                        <option value="surfboard">Surfboard</option>
+                        <option value="snowboard">Snowboard</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Your Rating</label>
+                    <div class="rating-container">
+                        <input type="radio" name="rating" id="star5" value="5">
+                        <label for="star5"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" id="star4" value="4">
+                        <label for="star4"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" id="star3" value="3">
+                        <label for="star3"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" id="star2" value="2">
+                        <label for="star2"><i class="fas fa-star"></i></label>
+                        <input type="radio" name="rating" id="star1" value="1">
+                        <label for="star1"><i class="fas fa-star"></i></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-text">Your Feedback</label>
+                    <textarea id="feedback-text" name="feedback-text" required></textarea>
+                </div>
+                <button type="submit" class="btn submit-btn">Submit Feedback</button>
+                <p id="feedback-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates on new products and special promotions</p>
+            <form id="newsletter-form">
+                <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+            <p id="newsletter-message"></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>HeavenBoards</h3>
+                <p>Quality boards crafted with passion since 2023.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="shipping.html">Shipping & Returns</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Pollibiddut, Savar, Dhaka</p>
+                <p><i class="fas fa-phone"></i> +8801742470013</p>
+                <p><i class="fas fa-envelope"></i> riozn15-4551@diu.edu.bd</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HeavenBoards. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
